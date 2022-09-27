@@ -4,17 +4,17 @@ public class Main {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
 
-        boolean returncode;
+        boolean returncode;  //booelean for Using
         do {
 
             System.out.println("Please Type Your birth year: ");
-            int year = scan.nextInt();
+            int year = scan.nextInt(); //Wait input from user
 
 
-            int result = year % 12;
+            int result = year % 12;  // This is for Finding the Zodiac sign
             String zodiac = String.valueOf(0);
 
-            switch (result) {
+            switch (result) { //switch case for checking all each case.
                 case 0:
                     zodiac = "Monkey";
                     break;
@@ -53,9 +53,9 @@ public class Main {
                     break;
                 default:break;
             }
-            System.out.println("Your Zodiac sign is: " + year + " " + zodiac);
+            System.out.println("Your Zodiac sign is: " + year + " " + zodiac); 
 
-            System.out.println("Do you want to enter another value?  (1-yes, 2-no)");
+            System.out.println("Do you want to enter another value?  (1-yes, 2-no)");// This is for do while which help me loop my programm
             int returnCode = scan.nextInt();
 
             if (returnCode == 2) {
